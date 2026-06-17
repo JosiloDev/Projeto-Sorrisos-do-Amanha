@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="shortcut icon" href="https://img.freepik.com/vetores-gratis/logotipo-humano-colorido-gradiente_474888-2689.jpg?semt=ais_hybrid&w=740&q=80" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Sorrisos do Amanhã</title>
+<body>
+ <header>
+    <div class="nav">
+        <div>
+            <h1><i class="ti ti-heart"></i> Sorrisos do <span class="grn">Amanhã</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#programas">Programas</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#" id="entrar" onclick="abrirModal()">Entrar</a>
+            <a href="#" id="doar" onclick="qrcode()">Doe agora</a>
+        </div>
+    </div>
+ </header>
+ <main>
+    <div id="qrcode-container">
+    <button id="fechar-qr" onclick="fecharQrcode()">✕</button>
+    <p class="qr-titulo">Escaneie para doar</p>
+    <img id="qr-imagem" src="DnjprL.png" alt="QR code para doação">
+    </div>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="fecharModal()">✕</button>
+    
+            <div class="modal-logo">
+                <i class="ti ti-heart"></i>
+                <span>Sorrisos do <span class="grn">Amanhã</span></span>
+            </div>
+    
+            <h2>Bem-vindo de volta</h2>
+            <p class="subtitulo">Acesse a área administrativa</p>
+    
+            <form onsubmit="validarLogin(event)">
+                <div class="form-group">
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Senha</label>
+                    <input type="password" id="pass" placeholder="••••••••">
+                </div>
+                <button type="submit"><i class="ti ti-login"></i> Entrar</button>
+            </form>
+    
+            <p class="hint">Use <strong>admin</strong> / <strong>1234</strong> para testar</p>
+        </div>
+    </div>
+    <section id="inicio">
+        <div class="hero">
+            <div id="herodregad">
+                
+            </div>
+            <div>
+                <h3 class="grn" >Transformando vidas</h3>
+                <h1>Cada sorriso começa com <br>um gesto de amor</h1>
+                <p>Levamos saúde bucal, educação e esperança para crianças em <br> situação de vulnerabilidade.</p>
+            </div>
+            <div class="hero-links">
+                <a href ="#" id="doar" onclick="qrcode()"><i class="ti ti-heart"></i> Doe Agora </a>
+                <a href="#programas" id="maisp">Mais projetos &#8594</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="dados">
+            <div id="card">
+                <h2>4.200+</h2>
+                <p>crianças atendidas</p>
+            </div>
+            <div id="card">
+                <h2>320</h2>
+                <p>volutários ativos</p>
+            </div>
+            <div id="card">
+                <h2>8 anos</h2>
+                <p>de impacto social</p>
+            </div>
+        </div>
+    </section>
+    <section id="programas">
+        <div class="metricas">
+            <div>
+                <h3 class="grn">Oque fazemos?</h3>
+                <h1>Nossos Programas</h1>
+            </div>
+            <div id="margem">
+                <div class="dadosm">
+                    <div id="cardm">
+                        <h1><i class="ti ti-check"></i></h1>
+                        <h4>Saúde bucal</h4>
+                        <p>Atendimento odontológico preventivo e curativo para crianças de 0 a 14 anos.</p>
+                    </div>
+                    <div id="cardm">
+                        <h1><i class="ti ti-book"></i></h1>
+                        <h4>Educação</h4>
+                        <p>Oficinas de higene, nutrição e educação ambiental nas escolas.</p>
+                    </div>
+                </div>
+                <div class="dadosm">
+                    <div id="cardm">
+                        <h1><i class="ti ti-users"></i></h1>
+                        <h4>Comunidade</h4>
+                        <p>Capacitação de agentes locais e mobilização de famílias para cuidados.</p>
+                    </div>
+                    <div id="cardm">
+                        <h1><i class="ti ti-brain"></i></h1>
+                        <h4>Sáude Mental</h4>
+                        <p>Apoio psicológico e rodas de conversa para crianças e famílias vulneráveis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dadosm2">
+                <div id="cardm2" >
+                    <h5>DESTAQUE</h5>
+                    <ul>
+                        <li>Saúde bucal preventiva para crianças de 0 a 14 anos</li>
+                        <li>ducação e higiene nas escolas públicas</li>
+                        <li>Apoio psicológico e saúde mental para famílias</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="sobre">
+        <div class="equipe">
+            <div>
+                <h3 class="grn">Nossa Equipe</h3>
+                <h1>Quem nós Somos?</h1>
+            </div>
+            <div id="margem">
+                <div class="dadose2">
+                    <div id="carde2">
+                        <img src="https://avatars.githubusercontent.com/u/164690845?v=4" alt="foto josé">
+                        <div id="texto-equipe">
+                            <h1>José Lucas Monteiro Farias</h1>
+                            <p>Programador Voluntário · Fortaleza, CE </p>
+                            <p>- "Talvez ajudar seja algo além da intenção, e mais da ação."</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <div class="dadose2">
+                <div id="carde2">
+                    <img src="cicio.jpeg" alt="foto cicio">
+                    <div id="texto-equipe">
+                        <h1>Mauricio de Sena</h1>
+                        <p>Programador Voluntário · Fortaleza, CE</p>
+                        <p>"Eu ajudo porque se fosse eu ali, iria querer alguém pra me ajudar"</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="metricas1">
+            <h3 class = "grn">Fale conosco</h3>
+            <h1 id = "tabela">Tabela de contato</h1>
+            <div class= "container-tabela">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Mauricio</td>
+                        <td>mauriciodesena333@gmail.com</td>
+                        <td>85 9 89999999</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Lucas</td>
+                        <td>joselucas323@gmail.com</td>
+                        <td>85 9 99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="metricas">
+            <div>
+                <h3 class = "grn">Sobre Convivio Familar Infantil</h3>
+                <h1>Clique para Baixar</h1>
+            </div>
+            <div>
+                <a href="diagnostico_acolhimento-1.pdf" download id="download-btn">
+                <i class="ti ti-file-download"></i> Baixar relatório PDF</a>
+            </div>
+        </div>
+    </section>
+    
+ </main>
+ <footer>
+    <h1>&copy;2024 Sorrisos do Amanhã · Todos os direitos reservados</h1>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
