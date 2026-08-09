@@ -1,10 +1,23 @@
-# Projeto-Sorrisos-do-Amanha
-Project created for the Programming Fundamentals II course at IFCE, aiming to strengthen basic knowledge and DOM interactions. The project is based on an NGO website that raises monetary funds to give children access to food, health, sports, and well-being.
-
-The project contains:
-<br>
-1 - Homepage for the site
-<br>
-2 - Topics explaining about the NGO and how donating can benefit many children
-<br>
-3 - Login screen, with basic verification and a signup example.
+# Sorrisos do Amanhã
+ 
+Website for a fictional NGO, built for the Programming Fundamentals II course at IFCE. The project focuses on practicing HTML, CSS and DOM manipulation with vanilla JavaScript.
+ 
+## Pages
+ 
+- **index.html** — Homepage: hero section, impact stats, programs, team, contact table and a downloadable report
+- **doe.html** — Donation page with a QR code for Pix donations
+- **sucesso.html** — Shown after a successful login
+- **erro.html** — Shown after a failed login
+## Features
+ 
+- Login modal with basic validation (`admin` / `1234`)
+- QR code popup for donations
+- Downloadable PDF report
+## Tech stack
+ 
+- HTML5
+- CSS3
+- JavaScript (DOM manipulation)
+## How to run
+ 
+Just open `index.html` in your browser — no build step required.
