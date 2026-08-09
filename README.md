@@ -1,10 +1,10 @@
 # Projeto-Sorrisos-do-Amanha
-Projeto criado para a matéria de Fundamentos da Programação II no IFCE, com intuito de fortalecer, conhecimentos básico e interações com DOM. O projeto é feito baseado em um site de ONG que arrecadam valores monétarios para crianças terem acesso à comida, saúde, esporte e bem-estar.
+Project created for the Programming Fundamentals II course at IFCE, aiming to strengthen basic knowledge and DOM interactions. The project is based on an NGO website that raises monetary funds to give children access to food, health, sports, and well-being.
 
-O Projeto contém:
+The project contains:
 <br>
-1 - Homepage para o site
+1 - Homepage for the site
 <br>
-2 - Tópicos explicando sobre a ONG e como doar pode ser benéfico para diversas crianças
+2 - Topics explaining about the NGO and how donating can benefit many children
 <br>
-3 - Tela de login, com verificação básica e com exemplo de cadastro.
+3 - Login screen, with basic verification and a signup example.
