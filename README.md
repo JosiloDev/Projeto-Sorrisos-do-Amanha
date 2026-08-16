@@ -7,7 +7,7 @@ Website for a fictional NGO, built for the Programming Fundamentals II course at
 - **sucesso.html** — Shown after a successful login
 - **erro.html** — Shown after a failed login
 ## Features
-- Login modal with basic validation (`admin` / `1234`)
+- Login modal with basic validation (admin / 1234)
 - QR code popup for donations
 - Downloadable PDF report
 ## Tech stack
